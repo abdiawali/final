@@ -2,6 +2,7 @@ var express = require('express')
 var bodyParser = require('body-parser')
 var Sequelize = require('sequelize')
 var api_routes = require('./routes/api.js')
+var path = require('path')
 
 //database configuration
 sequelize = new Sequelize({
@@ -24,7 +25,7 @@ app.use(bodyParser.json())
 router = api_routes(record)
 app.use('/api', api_routes(record))
 
-
+app.use(express.static(path.join(_dirname, 'vueclient', 'dist')))
 
 var server = app.listen(process.env.PORT || 3000, function() {
    console.log('app running on port', server.address().port)
