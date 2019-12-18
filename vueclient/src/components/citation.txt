@@ -1,0 +1,12 @@
+icon link: <a href="https://icons8.com/icon/121251/time-limit">Time Limit icon by Icons8</a>
+
+heading background image: https://unsplash.com/photos/vcPtHBqHnKk
+
+citation: 
+slide 9, 10, 11
+
+youtube chanel: LearnCode.academy
+https://www.youtube.com/watch?v=mZY1yyrlJWU&list=PLoYCgNOIyGADZuvKJweutZDOO9VI9YiJ9
+
+navigation
+https://bootstrap-vue.js.org/docs/components/navbar/
