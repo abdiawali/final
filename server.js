@@ -25,7 +25,7 @@ app.use(bodyParser.json())
 router = api_routes(record)
 app.use('/api', api_routes(record))
 
-app.use(express.static(path.join(_dirname, 'vueclient', 'dist')))
+app.use(express.static(path.join(__dirname, 'vueclient', 'dist')))
 
 var server = app.listen(process.env.PORT || 3000, function() {
    console.log('app running on port', server.address().port)
