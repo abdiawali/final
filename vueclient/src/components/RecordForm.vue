@@ -98,7 +98,7 @@ export default {
 
           this.StudyRecord.push(Record)
           
-          this.$recordService.add(Record).then( () => {
+          this.$record_api.addRecord(Record).then( () => {
             // do whatever you need to do when record is added 
             this.updateRecord()
           })

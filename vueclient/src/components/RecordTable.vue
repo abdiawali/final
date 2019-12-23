@@ -58,10 +58,9 @@ export default {
     //   {subject: 'Math', when: '01-01-2019', howLong: 2, style: 'Visual'},
     //   {subject: 'Programming', when: '01-01-2019', howLong: 8, style: 'Visual'},
     // ]
-    this.$recordService.get().then( records => {
+    this.$record_aoi.getAllRecords().then( records => {
       this.StudyRecord = records
       })
-    // this.StudyRecord = exampleRecords
   },
   computed: {
     totalHours() {
@@ -84,12 +83,6 @@ export default {
       })
     return hoursBySubject
     },
-    //StudyRecord(Record) {
-      //this.StudyRecord.push(record)
-      //this.StudyRecord.sort(function (r1, r2) {
-        //return r1.when.getTime() - r2.when.getTime()
-      //})
-    //}
   }
 }
 
